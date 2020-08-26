@@ -282,6 +282,7 @@ a {
 	transition: all 0.2s ease-in-out;
 }
 
+
 #about img {
 	border-radius: 50%;
 	width: 100px;
@@ -309,12 +310,18 @@ a {
 
 #tools .expertise ul li {
 	display: inline-block;
+    width:auto;
 }
 
 #tools .expertise {
 	padding-top: 20px;
 }
 
+#tools ul li {
+width:25%
+ }
+
+ 
 
 /* Skills Section */
 
