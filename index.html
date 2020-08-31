@@ -24,7 +24,103 @@
 	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="js/modernizr-custom.js"></script>
+
+	      <style>
+#loading {
+	background-color: #000000;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	z-index: 99999;
+	margin-top: 0px;
+	top: 0px;
+}
+#loading-center {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.scene {
+	width: 100%;
+	height: 100%;
+	perspective: 600;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+svg {
+	width: 350px;
+	height: 350px;
+}
+.loaded .scene {
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+	opacity: 0;
+}
+.loaded #loading {
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+	z-index: -99999;
+	opacity: 0;
+}
+</style>
 </head>
+
+<div id="loading">
+  <div id="loading-center">
+          <div class="scene"><svg 
+        version="1.1" 
+        id="dc-spinner" 
+        xmlns="http://www.w3.org/2000/svg" 
+        x="0px" y="0px"
+        width = "38"
+        height = "38"
+        viewBox="0 0 38 38" 
+        preserveAspectRatio="xMinYMin meet"
+        >
+            <text x="8" y="21" font-family="Monaco" font-size="1.8px" style="letter-spacing:0.6" fill="grey">TARANG CHOKSHI
+            <animate 
+             attributeName="opacity"
+             values="0;1;0" dur="1.8s"
+             repeatCount="indefinite"/>
+          </text>
+            <path fill="#373a42" d="M20,35c-8.271,0-15-6.729-15-15S11.729,5,20,5s15,6.729,15,15S28.271,35,20,35z M20,5.203
+          C11.841,5.203,5.203,11.841,5.203,20c0,8.159,6.638,14.797,14.797,14.797S34.797,28.159,34.797,20
+          C34.797,11.841,28.159,5.203,20,5.203z"></path>
+            <path fill="#373a42" d="M20,33.125c-7.237,0-13.125-5.888-13.125-13.125S12.763,6.875,20,6.875S33.125,12.763,33.125,20
+          S27.237,33.125,20,33.125z M20,7.078C12.875,7.078,7.078,12.875,7.078,20c0,7.125,5.797,12.922,12.922,12.922
+          S32.922,27.125,32.922,20C32.922,12.875,27.125,7.078,20,7.078z"></path>
+            <path fill="#2AA198" stroke="#2AA198" stroke-width="0.6027" stroke-miterlimit="10" d="M5.203,20
+                  c0-8.159,6.638-14.797,14.797-14.797V5C11.729,5,5,11.729,5,20s6.729,15,15,15v-0.203C11.841,34.797,5.203,28.159,5.203,20z">
+            <animateTransform
+              attributeName="transform"
+              type="rotate"
+              from="0 20 20"
+              to="360 20 20"
+              calcMode="spline"
+              keySplines="0.4, 0, 0.2, 1"
+              keyTimes="0;1"
+              dur="2s"
+              repeatCount="indefinite" />
+          </path>
+            <path fill="#859900" stroke="#859900" stroke-width="0.2027" stroke-miterlimit="10" d="M7.078,20
+        c0-7.125,5.797-12.922,12.922-12.922V6.875C12.763,6.875,6.875,12.763,6.875,20S12.763,33.125,20,33.125v-0.203
+        C12.875,32.922,7.078,27.125,7.078,20z">
+            <animateTransform
+            attributeName="transform"
+            type="rotate"
+            from="0 20 20"
+            to="360 20 20"
+            dur="1.8s"  
+            repeatCount="indefinite" />
+          </path>
+            </svg></div>
+        </div>
+</div>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 	<!-- Header -->
@@ -219,7 +315,7 @@
 		</div>
 	</div>
 	<!-- Resume Section -->
-	<div id="resume" class="text-center main">
+	<!-- <div id="resume" class="text-center main">
 		<div class="outline_text">Career</div>
 		<div class="container">
 			<div class="section-title center">
@@ -293,7 +389,7 @@
             <div class="row">
 				<div class="col-lg-12">
 					<ul class="timeline">
-						<!-- Education Section-->
+						 
 						<li>
 							<div class="timeline-image">
 								<h4> 2010 <br>
@@ -334,7 +430,115 @@
 			</div>
 		</div>
 		
-	</div>
+	</div> -->
+
+
+	<div id="timeline" class="text-center main">
+			<div class="outline_text">Career</div>
+
+ <div class="container">
+
+ 	<h4 class="text-center"> Work Experience & Activities</h4>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="main-timeline">
+                        <a href="javascript:void(0)" class="timeline">
+                            <div class="timeline-icon"><i class="fa fa-globe"></i></div>
+                            <div class="timeline-content">
+                                <h3 class="title">IFOUR TECHNOLAB PVT. LTD.</h3>
+                                <h4 class="subtitle">Lead QA and Automation Engineer (Oct'17 to Present)</h4>
+                                <p class="description">
+                                    Currently working as Team lead including 4 members. Roles: Scrum management, Sprint Planning, Automation and Manual Testing, Requirement Analysis.
+                                </p>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)" class="timeline">
+                            <div class="timeline-icon"><i class="fa fa-rocket"></i></div>
+                            <div class="timeline-content">
+                                <h3 class="title">Conduct Testing Seminar in AIT college</h3>
+                                <h4 class="subtitle">Ahmedabad Institute of Technology (2018)</h4>
+                                <p class="description">
+                                    Organised learning session of Manual and Automation testing. I have shared knowledge of Terminologies of Software testing and Fundamentals of Automation Testing.
+                                </p>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)" class="timeline">
+                            <div class="timeline-icon"><i class="fa fa-rocket"></i></div>
+                            <div class="timeline-content">
+                                <h3 class="title">PLANET-X TECHNOLOGIES</h3>
+                                <h4 class="subtitle">Sr. QA (Jan'17 to Oct'17)</h4>
+                                <p class="description">
+                                    Worked as Manual QA with responsibilities: Testcase management and task plannning, Testcase executions and bug reporting.
+                                </p>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)" class="timeline">
+                            <div class="timeline-icon"><i class="fa fa-rocket"></i></div>
+                            <div class="timeline-content">
+                                <h3 class="title">Conduct Testing Seminar in College</h3>
+                                <h4 class="subtitle">C.K.Pithawala college of Engg. & Tech. (2017)</h4>
+                                <p class="description">
+                                    I have conducted seminar of Software testing as requested of Computer Department HOD. Topic was - Basic knowledge of Testing and Scope of Software testing current and in future.
+                                </p>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)" class="timeline">
+                            <div class="timeline-icon"><i class="fa fa-briefcase"></i></div>
+                            <div class="timeline-content">
+                                <h3 class="title">DYNAMIC DREAMZ WEBSOLUTION</h3>
+                                <h4 class="subtitle">Quality Analyst (Jan'16 to Jan'17)</h4>
+                                <p class="description">
+                                    Worked as Quality Analyst with responsibilities including Testcase creation and executions, Bug reporting and Mobile App testing.
+                                </p>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)" class="timeline">
+                            <div class="timeline-icon"><i class="fa fa-mobile"></i></div>
+                            <div class="timeline-content">
+                                <h3 class="title">TRIGUNS</h3>
+                                <h4 class="subtitle">Jr. Tester (Dec'14 to Dec'15)</h4>
+                                <p class="description">
+                                    Worked as Jr. Tester with responsibilities including Testcases execution, Functionality testing, Adhoc testing, Smoke Testing and Bug reporting.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+    <h4 class="text-center"> Education</h4>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="main-timeline">
+                        <a href="javascript:void(0)" class="timeline">
+                            <div class="timeline-icon"><i class="fa fa-globe"></i></div>
+                            <div class="timeline-content">
+                                <h3 class="title">C.K. Pithawala College of Engg. & Tech.</h3>
+                                <h4 class="subtitle">Bachelor in Computer Engineering (2010 to 2014)</h4>
+                                <p class="description">
+                                    I did my graduation of 4 years in Computer Engineering field. College is registered into GTU. Also I did corporate company training in last year term for 8 months as a project submission.
+                                </p>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)" class="timeline">
+                            <div class="timeline-icon"><i class="fa fa-rocket"></i></div>
+                            <div class="timeline-content">
+                                <h3 class="title">J.V. Modern Highschool</h3>
+                                <h4 class="subtitle">10th and 12th Science (2008 to 2010)</h4>
+                                <p class="description">
+                                    I did my schooling from JV modern highschool located in Surat city. In 10th board - I got 2nd class and in 12th Science (Math) -  I got 1st class division.
+                                </p>
+                            </div>
+                        </a>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+
 	<!-- Testament section -->
 	<div id="testimonial" class="text-center main">
 		<div class="container">
@@ -447,6 +651,9 @@
 							</div>
 						</div>
 					</div>
+
+            	 <a class="btn btn-default" href="http://tarangchokshi.in/blog/" target="_blank">Read Blog</a> 
+
 				</div>
 		</div>
 	<!--  Contact Section  -->
@@ -507,6 +714,10 @@
 			</div>
 		</div>
 	</div>
+
+
+
+
 	<div id="footer">
 		<div class="container text-center">
 			<div class="fnav">
@@ -531,7 +742,7 @@
 	<script>
 	setTimeout(function() {
 		$('body').addClass('loaded');
-	}, 5000);
+	}, 000);
 	</script>
 	<!--Start of Tawk.to Script-->
 	<script type="text/javascript">
