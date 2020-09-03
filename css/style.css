@@ -855,12 +855,13 @@ hr {
 }
 
 .port img {
-	width: 50%;
+	width: 30%;
+	height: auto;
 }
 
 .port .description {
 	float: left;
-	width: 50%;
+	width: 60%;
 	max-height: 100%;
 	padding: 0 40px 40px;
 	overflow: auto;
@@ -910,7 +911,7 @@ hr {
 
 .item_open .close {
 	opacity: 1;
-	top: -280px;
+	top: -150px;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
